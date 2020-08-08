@@ -2,7 +2,9 @@ This repository is an example of how to run python scripts in a python virtual e
 
 To use this script do the following. 
 
-First, clone this repository. Then execute the commands below. 
+First, clone this repository to the desination HPC. Then execute the commands below. 
+
+git clone https://github.com/ian-j-stewart/pythonvm_slurm.git HPC
 
 
 #install  the virtualenvpackage  to your home directory 
