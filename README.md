@@ -12,7 +12,7 @@ git clone https://github.com/ian-j-stewart/pythonvm_slurm.git HPC
 pip3 install -t $HOME virtualenv
 ```
 
-#allow python to see the package by adding it to your pay
+#allow python to see the package by adding it to your path
 ```
 export PYTHONPATH=$PYTHONPATH:$HOME/.virtualenvs/AdS
 ```
