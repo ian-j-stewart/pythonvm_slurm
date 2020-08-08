@@ -6,23 +6,24 @@ First, clone this repository. Then execute the commands below.
 
 
 #install  the virtualenvpackage  to your home directory 
-
+```
 pip3 install -t $HOME virtualenv
+```
 
 #allow python to see the package by adding it to your pay
-
+```
 export PYTHONPATH=$PYTHONPATH:$HOME/.virtualenvs/AdS
+```
 
-
-#Note: if you want to test the environment before submission to Slurm you can: 
-#Enter the virtual environment 
+If you want to test the environment before submission to Slurm you can nter the virtual environment as follows:
+```
 source $HOME/.virtualenvs/AdS/bin/activate
 #you are now working in the virtual environment so could install project packages just with pip install (i.e. pip install pandas) 
 #to exit the env 
 deactivate
-
+```
 
 Next, you can run your python script on slurm in the virtualenv with the following command. Note that the configuration for this is in the slurm-python.sh file which you can customise. Right now all the code does is install packages from the requirements.txt, list installed packages, and print a line of code. 
-
+```
 sbatch slurm_python.sh
-
+```
